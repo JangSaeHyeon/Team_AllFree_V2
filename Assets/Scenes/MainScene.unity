@@ -9720,7 +9720,7 @@ SpriteRenderer:
   m_Size: {x: 0.55, y: 1.16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &653948987
@@ -55871,52 +55871,31 @@ MonoBehaviour:
   m_GameObject: {fileID: 2109691541}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67cbb71ec52ae8a48a64a1bf9973586c, type: 3}
+  m_Script: {fileID: 11500000, guid: bf9865cebde502045a8aa918fde03373, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   viewHeight_Y: 0
   viewHeight_X: 0
   harf_ViewHeaight_Y: 0
   harf_ViewHeaight_X: 0
-  bossCamera: {fileID: 1419251836}
-  target:
-  - {fileID: 919797040}
-  - {fileID: 1699572061}
-  - {fileID: 87349346}
-  - {fileID: 3098827}
+  bossCamera: {fileID: 0}
+  target: []
   coreInformation: []
   StateCoreIndex: 0
-  eliteSkill_Spot:
-  - {x: -0.000000033711615, y: 5.79e-43, z: 0}
-  - {x: 0, y: 3.014563e-39, z: 5.8e-43}
-  - {x: 4.6e-44, y: 3.3613576e+21, z: -0.000000033711615}
-  - {x: 5.79e-43, y: -0.000000033708204, z: 5.79e-43}
-  - {x: 3.014608e-39, y: 5.8e-43, z: 6.9e-44}
+  eliteSkill_Spot: []
   Range_SpawnPoint: []
   Shot_SpawnPoint: []
   Item_SpawnPoint: []
-  Drop_SpawnPoint:
-  - {fileID: 1740543043}
-  - {fileID: 1928055127}
-  - {fileID: 666708095}
-  - {fileID: 1824876414}
-  - {fileID: 1742619611}
-  - {fileID: 1685470890}
-  eliteSpawnPoint: {fileID: 454446677}
-  bossSpawnPoint: {fileID: 304392245}
-  elite_Border:
-  - {fileID: 1178010851}
-  - {fileID: 225846090}
-  - {fileID: 974363978}
-  boss_Border:
-  - {fileID: 1602011123}
-  - {fileID: 1991326623}
-  - {fileID: 997570819}
-  eliteMonster_Trigger: {fileID: 2012058012}
-  boss_Trigger: {fileID: 1506870832}
-  player: {fileID: 653948984}
-  objectManager: {fileID: 1704467653}
-  enemyScript: {fileID: 650587982}
+  Drop_SpawnPoint: []
+  eliteSpawnPoint: {fileID: 0}
+  bossSpawnPoint: {fileID: 0}
+  elite_Border: []
+  boss_Border: []
+  eliteMonster_Trigger: {fileID: 0}
+  boss_Trigger: {fileID: 0}
+  player: {fileID: 0}
+  objectManager: {fileID: 0}
+  enemyScript: {fileID: 0}
 --- !u!4 &2109691543
 Transform:
   m_ObjectHideFlags: 0
@@ -56319,6 +56298,18 @@ PrefabInstance:
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1919093020}
+    - target: {fileID: 4667395757392090679, guid: 40b127b0137d4d94893e117f5b4dde8e, type: 3}
+      propertyPath: m_Color.b
+      value: 0.48820755
+      objectReference: {fileID: 0}
+    - target: {fileID: 4667395757392090679, guid: 40b127b0137d4d94893e117f5b4dde8e, type: 3}
+      propertyPath: m_Color.g
+      value: 0.56944966
+      objectReference: {fileID: 0}
+    - target: {fileID: 4667395757392090679, guid: 40b127b0137d4d94893e117f5b4dde8e, type: 3}
+      propertyPath: m_Color.r
+      value: 0.6509434
+      objectReference: {fileID: 0}
     - target: {fileID: 5084158672766564552, guid: 40b127b0137d4d94893e117f5b4dde8e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -56354,7 +56345,11 @@ PrefabInstance:
     - target: {fileID: 8681721232803522086, guid: 40b127b0137d4d94893e117f5b4dde8e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 2109691542}
+      objectReference: {fileID: 2109691541}
+    - target: {fileID: 8681721232803522086, guid: 40b127b0137d4d94893e117f5b4dde8e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
